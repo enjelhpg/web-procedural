@@ -23,7 +23,7 @@
 // $produk2->tambahProperty = "hahahahah";
 // var_dump($produk2);
 
-$produk3 = new Produk();
+$produk3 = new Produk("Uncharted","Neil Drucman","Sony Comp",4000000);
 //error karna harusnya diisi data 
 $produk3->judul = "Naruto";
 $produk3->author = "Masa sih";
@@ -35,7 +35,7 @@ $produk3->harga = 3000000;
 // echo $produk3->getLabel();
 // echo "<br>";
 
-$produk4 = new Produk();
+$produk4 = new Produk("Uncharted","Neil Drucman","Sony Comp",4000000);
 //error karna harusnya diisi data
 $produk4->judul = "Uncharted";
 $produk4->author = "Neil Drucman";
