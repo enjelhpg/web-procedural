@@ -29,6 +29,7 @@
         }
     }
 
+    //hasil dari method get label kelas produk
 $produk1 = new Produk("Naruto","Masa Sih","Gramed",200000);
 $produk2 = new Produk("Uncharted","Neil Drucman","Sony Comp",4000000);
 
@@ -36,6 +37,9 @@ echo "Komik : " . $produk1->getLabel();
 echo "<br>";
 echo "Game : " . $produk2->getLabel();
 echo "<br>";
+
+//hasil dari method get label kelas cetakinfoproduk
 $infoproduk1 = new CetakInfoProduk();
 echo $infoproduk1->cetak($produk1);
+
 ?>
