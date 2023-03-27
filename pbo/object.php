@@ -2,12 +2,12 @@
     
     class Produk {
         
-        public  $judul = "judul",
-                $author = "enjel",
-                $penerbit = "erlangga",
-                $harga = 200000;
+        public  $judul,
+                $author,
+                $penerbit,
+                $harga;
 
-        public function __construct($judul,$author,$penerbit,$harga)
+        public function __construct($judul = "judul", $author="penulis", $penerbit = "penerbit", $harga = 0)
         {
             //method ini otomatis dijalankan otomatis setiap dibuat instant setiap class baru
             $this->judul = $judul;
@@ -29,7 +29,7 @@
         }
     }
 
-    //hasil dari method get label kelas produk
+//hasil dari method get label kelas produk
 $produk1 = new Produk("Naruto","Masa Sih","Gramed",200000);
 $produk2 = new Produk("Uncharted","Neil Drucman","Sony Comp",4000000);
 
